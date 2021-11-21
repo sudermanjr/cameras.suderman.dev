@@ -13,7 +13,7 @@ module.exports = function (
   relativeSrc,
   alt,
   className,
-  widths = [400, 800, 1280],
+  widths = [null, 400],
   baseFormat = 'png',
   optimizedFormats = ['webp'],
   sizes = '100vw'
@@ -69,6 +69,8 @@ module.exports = function (
       src="${formatSizes[baseFormat].placeholder.url}"
       data-src="${formatSizes[baseFormat].largest.url}"
       class="lazy-img"
+      width="${formatSizes[baseFormat].largest.width}"
+      alt="${alt}"
       loading="lazy">
   </picture>`;
 

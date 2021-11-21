@@ -10,7 +10,7 @@
   <div class="[ panel dot-shadow ] [ bg-tertiary-glare ]">
     <div class="wrapper">
       <article class="[ gallery ] [ flow flow-space-800 ]">
-        {% for item in collections.work %}
+        {% for item in collections.cameras %}
         <figure class="[ gallery__item ] [ flow ]">
           <div class="[ gallery__media ] [ frame ]" data-frame="primary">
             <img
@@ -26,14 +26,12 @@
             <p class="[ gallery__summary ] [ measure-short flow-space-300 ]">
               {{ item.data.summary }}
             </p>
-            <a href="{{ item.url }}" class="button">See this work</a>
+            <a href="{{ item.url }}" class="button">See this camera</a>
           </figcaption>
         </figure>
         {% endfor %}
       </article>
     </div>
   </div>
-
-  {% include "partials/cta.html" %}
 
 {% endblock %}

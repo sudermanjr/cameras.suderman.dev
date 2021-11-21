@@ -1,10 +1,10 @@
 {% extends "layouts/base.html" %}
-{% set pageCriticalStyles = ['css/work-item.css'] %}
+{% set pageCriticalStyles = ['css/camera.css'] %}
 
 {% set peopleItems = helpers.filterCollectionByKeys(collections.people, team) %}
 
 {% block content %}
-<section class="work-item">
+<section class="camera">
   <header class="hero">
     <div class="[ hero__inner ] [ wrapper ]">
       <div class="[ hero__content ] [ dot-shadow radius flow ] [ bg-dark-shade color-light flow-space-400 ]">
@@ -63,7 +63,5 @@
     </article>
   {% endif %}
 </section>
-
-{% include "partials/cta.html" %}
 
 {% endblock %}

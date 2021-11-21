@@ -6,19 +6,11 @@
     },
     {
       "text": "About",
-      "url": "/about-us/"
+      "url": "/about/"
     },
     {
-      "text": "Work",
-      "url": "/work/"
-    },
-    {
-      "text": "Blog",
-      "url": "/blog/"
-    },
-    {
-      "text": "Contact",
-      "url": "/contact/"
+      "text": "Cameras",
+      "url": "/cameras/"
     }
   ]
 }

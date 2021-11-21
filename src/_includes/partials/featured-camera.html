@@ -1,0 +1,35 @@
+<article class="[ featured-camera ] [ dot-shadow panel ] [ bg-light-glare ]">
+  <div class="[ wrapper ] [ flow ]">
+    <div class="[ featured-camera__inner ] [ flow ]">
+      <div class="[ featured-camera__intro ] [ flow flow-space-300 ]">
+        <h2
+          class="[ featured-camera__heading ] [ headline ] [ color-quinary-shade lg:measure-micro ]"
+          data-highlight="dark"
+        >
+          {{ featuredCamera.title }}
+        </h2>
+        <p class="[ featured-camera__summary ] [ measure-compact ]">
+          {{ featuredCamera.summary }}
+        </p>
+      </div>
+      {% for item in collections.featuredCamera %}
+      <a
+        href="{{ item.url }}"
+        aria-label="See {{ item.data.title }}"
+        class="[ featured-camera__item ] [ frame ]"
+        data-frame="quaternary"
+      >
+        <img
+          src="{{ item.data.hero.image }}"
+          alt="{{ item.data.hero.imageAlt }}"
+          loading="lazy"
+          class="radius"
+        />
+      </a>
+      {% endfor %}
+    </div>
+    <div class="[ featured-camera__action ] [ flow-space-700 ]">
+      <a href="/cameras/" class="button">See more cameras</a>
+    </div>
+  </div>
+</article>

@@ -7,7 +7,7 @@ intro:
   main: 'a lot of them'
   summary: 'The Suderman Camera Collection'
   buttonText: 'See the collection'
-  buttonUrl: '/work'
+  buttonUrl: '/cameras'
   image: '/images/bg/toast.jpg'
   imageAlt: 'Buttered toasted white bread'
 primaryCTA:
@@ -18,9 +18,9 @@ primaryCTA:
     though. Take the course today!'
   buttonText: 'Buy a copy'
   buttonUrl: 'https://learneleventyfromscratch.com'
-featuredWork:
-  title: 'Selected work'
-  summary: 'Some stuff that should give you an idea of what we’re all about.'
+featuredCamera:
+  title: 'Selected camera'
+  summary: 'Some of my favorites.'
 studioFeed:
   title: 'From inside the studio'
 ---

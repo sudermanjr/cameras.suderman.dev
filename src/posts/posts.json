@@ -1,4 +1,0 @@
-{
-  "layout": "layouts/post.html",
-  "permalink": "https://cameras.suderamn.dev/blog/{{ title | slug }}/index.html"
-}

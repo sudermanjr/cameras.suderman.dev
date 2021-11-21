@@ -1,9 +1,7 @@
 ---
-title: 'About Issue 33'
+title: 'About The Suderman Camera Collection'
 layout: 'layouts/about.html'
-permalink: '/about-us/index.html'
+permalink: '/about/index.html'
 ---
 
-Wanna see our foosball table? Nah, only kidding. We’re a made-up
-agency being used as an example for the Piccalilli course,
-[Learn Eleventy From Scratch](https://learneleventyfromscratch.com).
+My grandfather, Jack Suderman, was an avid photographer and camera collector.

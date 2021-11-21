@@ -17,6 +17,9 @@ module.exports = config => {
     config.addTransform('htmlmin', htmlMinTransform);
   }
 
+  // Set directories to pass through to the dist folder
+  config.addPassthroughCopy('./src/images/');
+
   // Add filters
   config.addFilter('dateFilter', dateFilter);
   config.addFilter('w3DateFilter', w3DateFilter);
@@ -24,21 +27,16 @@ module.exports = config => {
   // Plugins
   config.addPlugin(rssPlugin);
 
-  // Returns work items, sorted by display order
-  config.addCollection('work', collection => {
-    return sortByDisplayOrder(collection.getFilteredByGlob('./src/work/*.md'));
+  // Returns cameras items, sorted by display order
+  config.addCollection('cameras', collection => {
+    return sortByDisplayOrder(collection.getFilteredByGlob('./src/cameras/*.md'));
   });
 
-  // Returns work items, sorted by display order then filtered by featured
+  // Returns cameras items, sorted by display order then filtered by featured
   config.addCollection('featuredWork', collection => {
-    return sortByDisplayOrder(collection.getFilteredByGlob('./src/work/*.md')).filter(
+    return sortByDisplayOrder(collection.getFilteredByGlob('./src/cameras/*.md')).filter(
       x => x.data.featured
     );
-  });
-
-  // Returns a collection of blog posts in reverse date order
-  config.addCollection('blog', collection => {
-    return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
   });
 
   // Returns a list of people ordered by filename

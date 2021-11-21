@@ -10,8 +10,7 @@ const w3DateFilter = require('./src/filters/w3-date-filter.js');
 const htmlMinTransform = require('./src/transforms/html-min-transform.js');
 
 // Images Utils
-const Image = require('@11ty/eleventy-img');
-const imageShortCode = require('./src/utils/images.js');
+const imageShortcode = require('./src/utils/images.js');
 
 // Create a helpful production flag
 const isProduction = process.env.NODE_ENV === 'production';
@@ -24,6 +23,7 @@ module.exports = config => {
 
   // Set directories to pass through to the dist folder
   config.addPassthroughCopy('./src/images/');
+  config.addPassthroughCopy('./src/js/');
 
   // Add filters
   config.addFilter('dateFilter', dateFilter);
@@ -55,8 +55,9 @@ module.exports = config => {
   config.setUseGitIgnore(false);
 
   // Images shortcode
-  config.addNunjucksAsyncShortcode('image', imageShortCode);
+  config.addNunjucksAsyncShortcode('image', imageShortcode);
 
+  // Allow logging from templates
   config.addFilter('log', value => {
       console.log(value)
   })

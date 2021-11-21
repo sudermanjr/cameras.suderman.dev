@@ -14,11 +14,7 @@
       <a href="{{ intro.buttonUrl }}" class="button">{{ intro.buttonText }}</a>
     </div>
     <div class="[ intro__media ] [ radius dot-shadow ]">
-      <img
-        class="[ intro__image ] [ radius ]"
-        src="{{ intro.image }}"
-        alt="{{ intro.imageAlt }}"
-      />
+      {% image intro.image, intro.imageAlt, "[ intro__image ] [ radius ]" %}
     </div>
   </article>
 </div>

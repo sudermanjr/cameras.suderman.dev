@@ -1,12 +1,14 @@
 //https://www.aleksandrhovhannisyan.com/blog/eleventy-image-lazy-loading/
 const path = require('path');
+const Image = require('@11ty/eleventy-img');
+const outdent = require('outdent');
 
 const ImageWidths = {
   ORIGINAL: null,
   PLACEHOLDER: 24,
 };
 
-const imageShortcode = async (
+module.exports = async (
   relativeSrc,
   alt,
   className,
@@ -15,17 +17,14 @@ const imageShortcode = async (
   optimizedFormats = ['webp'],
   sizes = '100vw'
 ) => {
-  return "<picture></picture>";
-  if (/https.+/.test(relativeSrc)) {
-    const fullSrc = relativeSrc;
-  } else {
-    const { dir: imgDir } = path.parse(relativeSrc);
-    const fullSrc = path.join('src', relativeSrc);
-  }
+
+  const { dir: imgDir } = path.parse(relativeSrc);
+  const fullSrc = /^https.+/.test(relativeSrc) ? relativeSrc : path.join('src', relativeSrc);
+
   const imageMetadata = await Image(fullSrc, {
     widths: [ImageWidths.ORIGINAL, ImageWidths.PLACEHOLDER, ...widths],
     formats: [...optimizedFormats, baseFormat],
-    outputDir: path.join('_site', imgDir),
+    outputDir: path.join('dist', imgDir),
     urlPath: imgDir,
   });
 
@@ -44,7 +43,7 @@ const imageShortcode = async (
     return formatSizes;
   }, {});
 
-  const picture = `<picture class="${classNames('lazy-picture', className)}">
+  const picture = `<picture class="${className}">
   ${Object.values(imageMetadata)
     // Map each format to the source HTML markup
     .map((formatEntries) => {
@@ -65,9 +64,6 @@ const imageShortcode = async (
     <img
       src="${formatSizes[baseFormat].placeholder.url}"
       data-src="${formatSizes[baseFormat].largest.url}"
-      width="${width}"
-      height="${height}"
-      alt="${alt}"
       class="lazy-img"
       loading="lazy">
   </picture>`;
@@ -75,5 +71,3 @@ const imageShortcode = async (
   return outdent`picture`;
 
 };
-
-

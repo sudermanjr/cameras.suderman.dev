@@ -1,12 +1,17 @@
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
 
 const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
+
 // Filters
 const dateFilter = require('./src/filters/date-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
 // Transforms
 const htmlMinTransform = require('./src/transforms/html-min-transform.js');
+
+// Images Utils
+const Image = require('@11ty/eleventy-img');
+const imageShortCode = require('./src/utils/images.js');
 
 // Create a helpful production flag
 const isProduction = process.env.NODE_ENV === 'production';
@@ -48,6 +53,13 @@ module.exports = config => {
 
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   config.setUseGitIgnore(false);
+
+  // Images shortcode
+  config.addNunjucksAsyncShortcode('image', imageShortCode);
+
+  config.addFilter('log', value => {
+      console.log(value)
+  })
 
   return {
     markdownTemplateEngine: 'njk',

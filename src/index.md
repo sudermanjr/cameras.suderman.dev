@@ -21,8 +21,6 @@ primaryCTA:
 featuredCamera:
   title: 'Selected camera'
   summary: 'Some of my favorites.'
-studioFeed:
-  title: 'From inside the studio'
 ---
 
 This is pretty _annoying_, right?

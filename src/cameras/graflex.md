@@ -1,37 +1,34 @@
 ---
-title: 'Graflex Miniature'
+title: 'SpeedGraphic Miniature'
 summary: 'A Press-Style Camera'
 displayOrder: 1
 featured: true
 tags:
 - kodak
 hero:
-  image: '/images/cameras/outgoings-hero.jpg'
-  imageAlt: 'Screens from the app, composed together as a group.'
+  image: '/images/cameras/graflex/graflex.png'
+  imageAlt: 'The Graflex SpeedGraphic Miniature'
 keyFacts:
-  - primary: '50%'
-    secondary: 'Increase in engagement'
-  - primary: '10%'
-    secondary: 'Increase in sales'
-  - primary: '£1,000,000'
-    secondary: 'In extra revenue'
-  - primary: '750 hours'
-    secondary: 'In saved productivity'
-  - primary: '4'
-    secondary: 'International awards'
-  - primary: '£28,000'
-    secondary: 'Saved in digital advertising'
+  - primary: 'Manufacturer'
+    secondary: 'Graflex'
+  - primary: 'Model'
+    secondary: 'SpeedGraphic Miniature'
+  - primary: 'Type'
+    secondary: 'Press Camera'
+  - primary: 'Film Type'
+    secondary: 'Sheet'
+  - primary: 'Years Made'
+    secondary: '1939-1946'
 gallery:
-  - title: 'Multi-account support'
-    summary: 'We wanted the app to be as useful as possible, so
-    multi-account support was a natural choice.'
-    image: '/images/cameras/outgoings-gallery-1.jpg'
-  - title: 'Concise summaries'
-    summary: 'The numbers speak volumes, so we give them center stage.'
-    image: '/images/cameras/outgoings-gallery-2.jpg'
-  - title: 'Crystal clear information for users'
-    summary: 'No distractions, no anti-patterns, just clear,
-    user-friendly information'
-    image: '/images/cameras/outgoings-gallery-3.jpg'
+  - title: ''
+    summary: 'Front view, showing the Compur shutter'
+    image: '/images/cameras/graflex/graflex-2.png'
+#  - title: 'Concise summaries'
+#    summary: 'The numbers speak volumes, so we give them center stage.'
+#    image: '/images/cameras/outgoings-gallery-2.jpg'
+#  - title: 'Crystal clear information for users'
+#    summary: 'No distractions, no anti-patterns, just clear,
+#    user-friendly information'
+#    image: '/images/cameras/outgoings-gallery-3.jpg'
 team: [1, 4, 6]
 ---

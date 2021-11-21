@@ -13,11 +13,7 @@
         {% for item in collections.cameras %}
         <figure class="[ gallery__item ] [ flow ]">
           <div class="[ gallery__media ] [ frame ]" data-frame="primary">
-            <img
-              class="radius"
-              src="{{ item.data.hero.image }}"
-              alt="{{ item.data.hero.imageAlt }}"
-            />
+            {% image item.data.hero.image, item.data.hero.imageAlt, "radius" %}
           </div>
           <figcaption class="[ gallery__content ] [ flow ]">
             <h2 class="[ gallery__heading ] [ text-700 md:text-900 ]">

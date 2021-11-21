@@ -19,12 +19,7 @@
         class="[ featured-camera__item ] [ frame ]"
         data-frame="quaternary"
       >
-        <img
-          src="{{ item.data.hero.image }}"
-          alt="{{ item.data.hero.imageAlt }}"
-          loading="lazy"
-          class="radius"
-        />
+        {% image item.data.hero.image, item.data.hero.imageAlt, "radius" %}
       </a>
       {% endfor %}
     </div>

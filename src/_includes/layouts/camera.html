@@ -14,7 +14,7 @@
         <p class="measure-short">{{ summary }}</p>
       </div>
     </div>
-    <img src="{{ hero.image }}" alt="{{ hero.imageAlt }}" class="hero__image" />
+    {% image hero.image, hero.imageAlt, "hero__image" %}
   </header>
   <article class="[ key-facts ] [ panel dot-shadow ] [ bg-primary-shade color-light ]">
     <div class="wrapper flow">
@@ -38,7 +38,7 @@
       {% for item in gallery %}
         <figure class="[ gallery__item ] [ flow ]">
           <div class="[ gallery__media ] [ frame ]" data-frame="primary">
-            <img src="{{ item.image }}" alt="" aria-hidden="true" class="radius" />
+            {% image item.image, "", "radius" %}
           </div>
           <figcaption class="[ gallery__content ] [ flow ]">
             <h2 class="[ gallery__heading ] [ text-700 md:text-900 ]">

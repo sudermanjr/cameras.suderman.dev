@@ -9,7 +9,7 @@ const ImageWidths = {
   PLACEHOLDER: 24,
 };
 
-module.exports = async (
+module.exports = function (
   relativeSrc,
   alt,
   className,
@@ -17,17 +17,19 @@ module.exports = async (
   baseFormat = 'png',
   optimizedFormats = ['webp'],
   sizes = '100vw'
-) => {
-
+) {
   const { dir: imgDir } = path.parse(relativeSrc);
   const fullSrc = /^https.+/.test(relativeSrc) ? relativeSrc : path.join('src', relativeSrc);
 
-  const imageMetadata = await Image(fullSrc, {
+  let imageOptions = {
     widths: [ImageWidths.ORIGINAL, ImageWidths.PLACEHOLDER, ...widths],
     formats: [...optimizedFormats, baseFormat],
     outputDir: path.join('dist', imgDir),
     urlPath: imgDir,
-  });
+  }
+
+  Image(fullSrc, imageOptions);
+  const imageMetadata = Image.statsSync(fullSrc, imageOptions)
 
   // Map each unique format (e.g., jpeg, webp) to its smallest and largest images
   const formatSizes = Object.entries(imageMetadata).reduce((formatSizes, [format, images]) => {
@@ -70,6 +72,5 @@ module.exports = async (
       loading="lazy">
   </picture>`;
 
-    console.log(picture)
     return outdent`${picture}`;
 };

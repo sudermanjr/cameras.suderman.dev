@@ -55,7 +55,7 @@ module.exports = config => {
   config.setUseGitIgnore(false);
 
   // Images shortcode
-  config.addNunjucksAsyncShortcode('image', imageShortcode);
+  config.addNunjucksShortcode('image', imageShortcode);
 
   // Allow logging from templates
   config.addFilter('log', value => {

@@ -2,6 +2,7 @@
 const path = require('path');
 const Image = require('@11ty/eleventy-img');
 const outdent = require('outdent');
+const classNames = require('classnames');
 
 const ImageWidths = {
   ORIGINAL: null,
@@ -43,7 +44,8 @@ module.exports = async (
     return formatSizes;
   }, {});
 
-  const picture = `<picture class="${className}">
+  // Chain class names w/ the classNames package; optional
+  const picture = `<picture class="${classNames('lazy-picture', className)}">
   ${Object.values(imageMetadata)
     // Map each format to the source HTML markup
     .map((formatEntries) => {
@@ -68,6 +70,6 @@ module.exports = async (
       loading="lazy">
   </picture>`;
 
-  return outdent`picture`;
-
+    console.log(picture)
+    return outdent`${picture}`;
 };

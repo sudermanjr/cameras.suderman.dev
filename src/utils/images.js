@@ -70,6 +70,7 @@ module.exports = function (
       data-src="${formatSizes[baseFormat].largest.url}"
       class="lazy-img"
       width="${formatSizes[baseFormat].largest.width}"
+      height="${formatSizes[baseFormat].largest.height}"
       alt="${alt}"
       loading="lazy">
   </picture>`;

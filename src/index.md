@@ -1,6 +1,7 @@
 ---
 title: 'Suderman Cameras'
 layout: 'layouts/home.html'
+metaDesc: 'A made up agency site that you build if you take Learn Eleventy From Scratch, by Piccalilli'
 intro:
   eyebrow: 'Cameras'
   main: 'a lot of them'

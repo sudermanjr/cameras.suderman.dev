@@ -1,5 +1,5 @@
 ---
-title: 'The Issue 33 Blog'
+title: 'The Suderamn Camera Blog'
 layout: 'layouts/feed.html'
 pagination:
   data: collections.blog

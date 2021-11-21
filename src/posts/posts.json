@@ -1,4 +1,4 @@
 {
   "layout": "layouts/post.html",
-  "permalink": "https://piccalil.li/blog/{{ title | slug }}/index.html"
+  "permalink": "https://cameras.suderamn.dev/blog/{{ title | slug }}/index.html"
 }

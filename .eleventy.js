@@ -33,7 +33,7 @@ module.exports = config => {
   });
 
   // Returns cameras items, sorted by display order then filtered by featured
-  config.addCollection('featuredWork', collection => {
+  config.addCollection('featuredCamera', collection => {
     return sortByDisplayOrder(collection.getFilteredByGlob('./src/cameras/*.md')).filter(
       x => x.data.featured
     );

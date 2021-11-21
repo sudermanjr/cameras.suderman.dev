@@ -1,7 +1,6 @@
 ---
-title: 'Behind the scenes'
-summary: 'A travel journal that transports you to some of the most
-beautiful places on earth.'
+title: 'Baby Bessa'
+summary: 'A tiny bellows camera.'
 displayOrder: 2
 featured: true
 hero:

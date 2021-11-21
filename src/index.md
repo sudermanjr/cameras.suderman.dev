@@ -19,8 +19,6 @@ primaryCTA:
   buttonText: 'Buy a copy'
   buttonUrl: 'https://learneleventyfromscratch.com'
 featuredCamera:
-  title: 'Selected camera'
+  title: 'Featured cameras'
   summary: 'Some of my favorites.'
 ---
-
-This is pretty _annoying_, right?

@@ -3,6 +3,8 @@ title: 'Graflex Miniature'
 summary: 'A Press-Style Camera'
 displayOrder: 1
 featured: true
+tags:
+- kodak
 hero:
   image: '/images/cameras/outgoings-hero.jpg'
   imageAlt: 'Screens from the app, composed together as a group.'

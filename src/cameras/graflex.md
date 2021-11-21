@@ -30,5 +30,5 @@ gallery:
 #    summary: 'No distractions, no anti-patterns, just clear,
 #    user-friendly information'
 #    image: '/images/cameras/outgoings-gallery-3.jpg'
-team: [1, 4, 6]
+team: [1]
 ---

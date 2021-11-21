@@ -7,7 +7,7 @@
     "sass": "npx sass src/scss:src/_includes/css",
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run sass -- --watch",
-    "build": "npm run sass && eleventy"
+    "build": "NODE_ENV=production npm run sass && eleventy"
   },
   "keywords": [],
   "author": "",
@@ -135,6 +135,7 @@
     "has-flag": "^4.0.0",
     "has-symbols": "^1.0.2",
     "has-tostringtag": "^1.0.0",
+    "html-minifier": "^4.0.0",
     "http-errors": "^1.8.1",
     "http-proxy": "^1.18.1",
     "iconv-lite": "^0.4.24",

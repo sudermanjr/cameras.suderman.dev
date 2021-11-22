@@ -2,7 +2,7 @@
 title: 'Kodak Brownie Special Six-20'
 summary: 'Metal Box Camera'
 displayOrder: 10
-featured: true
+featured: false
 tags:
 - kodak
 - brownie

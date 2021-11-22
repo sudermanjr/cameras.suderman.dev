@@ -1,5 +1,5 @@
 ---
-title: 'Brownie Kodak Special Six-20'
+title: 'Kodak Brownie Special Six-20'
 summary: 'Metal Box Camera'
 displayOrder: 10
 featured: true
@@ -9,7 +9,7 @@ tags:
 - 620
 hero:
   image: '/images/cameras/kodak/kodak-brownie-special-six-20.png'
-  imageAlt: 'The Voigtlander Bessa 66 (Front View)'
+  imageAlt: 'The Kodak Brownie Special Six-20'
 keyFacts:
   - primary: 'Manufacturer'
     secondary: 'Kodak'

@@ -1,6 +1,6 @@
 {% extends "layouts/base.html" %}
-{% set pageCriticalStyles = ['css/camera.css'] %}
 
+{% set pageCriticalStyles = ['css/camera.css'] %}
 {% set peopleItems = helpers.filterCollectionByKeys(collections.people, team) %}
 
 {% block content %}
@@ -52,7 +52,7 @@
       {% endfor %}
     </article>
   </div>
-  {% if peopleItems %}
+  {% if peopleItems | length %}
     <article class="[ no-js-hidden ] [ panel dot-shadow ] [ bg-light-glare ]">
       <div class="[ wrapper ] [ flow flow-space-700 ]">
         <h2 class="[ headline ] [ measure-micro color-quinary ]" data-highlight="dark">

@@ -23,12 +23,5 @@ gallery:
   - title: ''
     summary: 'Front view, showing the Compur shutter'
     image: '/images/cameras/graflex/graflex-2.png'
-#  - title: 'Concise summaries'
-#    summary: 'The numbers speak volumes, so we give them center stage.'
-#    image: '/images/cameras/outgoings-gallery-2.jpg'
-#  - title: 'Crystal clear information for users'
-#    summary: 'No distractions, no anti-patterns, just clear,
-#    user-friendly information'
-#    image: '/images/cameras/outgoings-gallery-3.jpg'
-team: [1]
+team: []
 ---

@@ -23,7 +23,7 @@ keyFacts:
     secondary: '1938-1942'
 gallery:
   - title: Front View
-    summary: 'Two examples. One still has the oritinal leatherette strap.'
+    summary: 'Two examples. One still has the original leatherette strap.'
     image: '/images/cameras/kodak/kodak-brownie-special-six-20.png'
 team: []
 ---

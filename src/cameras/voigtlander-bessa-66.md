@@ -22,8 +22,11 @@ keyFacts:
   - primary: 'Years Made'
     secondary: '1938-41 and 1945-50'
 gallery:
-  - title: ''
-    summary: 'Rear view'
+  - title: Front View
+    summary: 'Front view showing the Compur shutter and the Vaskar lens.'
+    image: '/images/cameras/voigtlander/bessa-66-1.png'
+  - title: 'Rear View'
+    summary: 'Rear view of the Bessa 66 showing embossing in the leatherette.'
     image: '/images/cameras/voigtlander/bessa-66-2.png'
 team: [1]
 ---

@@ -54,20 +54,26 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img {
-  max-width: 100%;
   display: block;
-  max-height: 100%;
+  max-block-size: 100%;
+  max-inline-size: 100%;
 }
 
 img[width][height] {
-  height: auto;
+  block-size: 100%;
   object-fit: cover;
 }
 
+img.img-aspect-ratio,
+img[width][height].img-aspect-ratio {
+  block-size: auto;
+  object-fit: contain;
+}
+
 img[src$=".svg"] {
-  width: 100%;
-  height: auto;
-  max-width: none;
+  block-size: auto;
+  inline-size: 100%;
+  max-inline-size: none;
 }
 
 /* Inherit fonts for inputs and buttons */

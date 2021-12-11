@@ -1,10 +1,10 @@
 ---
 title: 'SpeedGraphic Miniature'
 summary: 'A Press-Style Camera'
-displayOrder: 1
+displayOrder: 50
 featured: true
 tags:
-- kodak
+- graflex
 hero:
   image: '/images/cameras/graflex/graflex.png'
   imageAlt: 'The Graflex SpeedGraphic Miniature'

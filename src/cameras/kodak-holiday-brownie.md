@@ -1,7 +1,7 @@
 ---
 title: 'Brownie Holiday Flash'
 summary: 'A flash-enabled box camera designed by Arthur H. Crapsey'
-displayOrder: 1
+displayOrder: 30
 featured: true
 tags:
 - kodak

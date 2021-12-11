@@ -7,7 +7,7 @@ intro:
   main: 'Cameras'
   summary: 'The Suderman Camera Collection'
   buttonText: 'See the collection'
-  buttonUrl: '/cameras'
+  buttonUrl: '/cameras/index.html'
   image: '/images/bg/cover.png'
   imageAlt: 'An Ansco Vreda Box with manual and origin box.'
 featuredCamera:

@@ -1,7 +1,7 @@
 ---
 title: 'Brownie Flash 6-20'
 summary: 'Metal Box Camera With A Flash'
-displayOrder: 4
+displayOrder: 32
 featured: false
 tags:
 - kodak

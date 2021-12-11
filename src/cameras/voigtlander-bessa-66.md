@@ -1,7 +1,7 @@
 ---
 title: 'Bessa 66 (Baby Bessa)'
 summary: 'The first camera I ever shot.'
-displayOrder: 1
+displayOrder: 20
 featured: true
 tags:
 - voigtlander

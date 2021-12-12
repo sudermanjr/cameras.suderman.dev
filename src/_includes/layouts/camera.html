@@ -17,7 +17,7 @@
         <ul class="tags-list" aria-describedby="tags-desc" role="list">
           {% for tag in tags %}
             <li>
-              <a href="/tag/{{ tag | slug }}/">#{{ tag | replace(' ', '') }}/index.html</a>
+              <a href="/tag/{{ tag | slug }}/index.html">#{{ tag | replace(' ', '') }}</a>
             </li>
           {% endfor %}
         </ul>

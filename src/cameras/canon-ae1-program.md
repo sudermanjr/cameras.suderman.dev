@@ -1,6 +1,6 @@
 ---
 title: 'AE-1 Program'
-summary: 'Go-To 35mm SLR'
+summary: 'My go-to SLR for years. The camera Grandpa used the most, and my first real camera that he and my parents gave me.'
 displayOrder: 1
 featured: true
 tags:

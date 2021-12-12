@@ -28,5 +28,5 @@ gallery:
       Grandpa's Camera
     summary: 'The back, showing the nameplate that Grandpa always put in his cameras. It was intended to hold the tab from your film box, but he never did that.'
     image: '/images/cameras/canon/ae1_program_2.png'
-team: [3,1]
+team: [1,3]
 ---

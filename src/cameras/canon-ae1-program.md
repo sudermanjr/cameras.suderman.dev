@@ -6,6 +6,7 @@ featured: true
 tags:
 - canon
 - slr
+- 35mm
 hero:
   image: '/images/cameras/canon/ae1_program_1.png'
   imageAlt: 'The Canon AE-1 Program'

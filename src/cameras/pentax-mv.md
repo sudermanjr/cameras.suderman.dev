@@ -6,6 +6,7 @@ featured: false
 tags:
 - pentax
 - slr
+- 35mm
 hero:
   image: '/images/cameras/pentax/mv.png'
   imageAlt: 'The Pentax MV'

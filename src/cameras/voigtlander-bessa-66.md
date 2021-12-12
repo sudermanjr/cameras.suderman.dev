@@ -6,7 +6,7 @@ featured: true
 tags:
 - voigtlander
 - bessa
-- 120film
+- '120'
 hero:
   image: '/images/cameras/voigtlander/bessa-66-1.png'
   imageAlt: 'The Voigtlander Bessa 66 (Front View)'

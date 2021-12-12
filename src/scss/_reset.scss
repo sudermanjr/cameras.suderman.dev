@@ -47,6 +47,16 @@ ol[class] {
   list-style: none;
 }
 
+/*
+role="list" is required in the html for accessibility when removing list styles
+due to a Safari bug-feature,
+see https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
+*/
+ol[role="list"],
+ul[role="list"] {
+    list-style: none;
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;

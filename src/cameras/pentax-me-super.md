@@ -6,6 +6,7 @@ featured: false
 tags:
 - pentax
 - slr
+- 35mm
 hero:
   image: '/images/cameras/pentax/me_super_1.png'
   imageAlt: 'The Pentax ME Super'

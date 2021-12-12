@@ -6,7 +6,7 @@ featured: false
 tags:
 - kodak
 - brownie
-- 620
+- '620'
 hero:
   image: '/images/cameras/kodak/kodak-brownie-special-six-20.png'
   imageAlt: 'The Kodak Brownie Special Six-20'

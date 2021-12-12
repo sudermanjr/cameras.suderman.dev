@@ -6,7 +6,7 @@ featured: true
 tags:
 - kodak
 - brownie
-- 127
+- '127'
 hero:
   image: '/images/cameras/kodak/kodak-brownie-holiday-flash.png'
   imageAlt: 'The Kodak Brownie Holiday Flash (Front View)'

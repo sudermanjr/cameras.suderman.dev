@@ -6,7 +6,8 @@ featured: false
 tags:
 - kodak
 - duaflex
-- 620
+- '620'
+- tlr
 hero:
   image: '/images/cameras/kodak/duaflex_iv_1.png'
   imageAlt: 'The Kodak Duaflex IV (Front View)'

@@ -12,10 +12,21 @@
           {{- title -}}
         </h1>
         <p class="measure-short">{{ summary }}</p>
+      {% if tags %}
+        <p class="visually-hidden" id="tags-desc">Tags for this camera.</p>
+        <ul class="tags-list" aria-describedby="tags-desc" role="list">
+          {% for tag in tags %}
+            <li>
+              <a href="/tag/{{ tag | slug }}/">#{{ tag | replace(' ', '') }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
       </div>
     </div>
     {% image hero.image, hero.imageAlt, "hero__image" %}
   </header>
+
   <article class="[ key-facts ] [ panel dot-shadow ] [ bg-primary-shade color-light ]">
     <div class="wrapper flow">
       <h2 class="headline" data-highlight="secondary">Key facts</h2>

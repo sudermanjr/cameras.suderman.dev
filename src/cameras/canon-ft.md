@@ -6,6 +6,7 @@ featured: false
 tags:
 - canon
 - slr
+- 35mm
 hero:
   image: '/images/cameras/canon/ft.png'
   imageAlt: 'The Canon FT QL'

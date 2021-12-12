@@ -6,6 +6,7 @@ featured: false
 tags:
 - pentax
 - slr
+- 35mm
 hero:
   image: '/images/cameras/pentax/k1000.png'
   imageAlt: 'The Pentax K1000'

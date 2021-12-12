@@ -1,7 +1,7 @@
 ---
 title: 'Canon FT QL'
 summary: ''
-displayOrder: 1
+displayOrder: 2
 featured: false
 tags:
 - canon

@@ -1,7 +1,7 @@
 ---
 title: 'Pentax Sptomatic SPII'
 summary: ''
-displayOrder: 1
+displayOrder: 100
 featured: false
 tags:
 - pentax

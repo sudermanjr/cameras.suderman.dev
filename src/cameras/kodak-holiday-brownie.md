@@ -9,7 +9,7 @@ tags:
 - 127
 hero:
   image: '/images/cameras/kodak/kodak-brownie-holiday-flash.png'
-  imageAlt: 'The Voigtlander Bessa 66 (Front View)'
+  imageAlt: 'The Kodak Brownie Holiday Flash (Front View)'
 keyFacts:
   - primary: 'Manufacturer'
     secondary: 'Kodak'

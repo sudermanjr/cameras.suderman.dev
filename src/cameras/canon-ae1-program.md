@@ -5,6 +5,7 @@ displayOrder: 1
 featured: true
 tags:
 - canon
+- slr
 hero:
   image: '/images/cameras/canon/ae1_program_1.png'
   imageAlt: 'The Canon AE-1 Program'
@@ -22,7 +23,8 @@ keyFacts:
   - primary: 'Lens Mount'
     secondary: 'Canon FD'
 gallery:
-  - title: ''
+  - title: |
+      Grandpa's Camera
     summary: 'The back, showing the nameplate that Grandpa always put in his cameras. It was intended to hold the tab from your film box, but he never did that.'
     image: '/images/cameras/canon/ae1_program_2.png'
 team: [1]

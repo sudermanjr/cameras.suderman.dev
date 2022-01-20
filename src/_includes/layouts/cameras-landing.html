@@ -2,6 +2,13 @@
 
 {% set pageHeaderTitle = title %}
 {% set pageHeaderSummary = content %}
+{% set pageItems = pagination.items %}
+
+{# If this is a tag, grab those items instead as one large collection #}
+{% if tag %}
+  {% set pageItems = collections[tag] %}
+  {% set pageHeaderTitle = 'Cameras filed under “' + tag + '”' %}
+{% endif %}
 
 {% block content %}
   <article>
@@ -10,7 +17,7 @@
   <div class="[ panel dot-shadow ] [ bg-tertiary-glare ]">
     <div class="wrapper">
       <article class="[ gallery ] [ flow flow-space-800 ]">
-        {% for item in collections.cameras %}
+        {% for item in pageItems %}
         <figure class="[ gallery__item ] [ flow ]">
           <div class="[ gallery__media ] [ frame ]" data-frame="primary">
             {% image item.data.hero.image, item.data.hero.imageAlt, "radius" %}
@@ -26,6 +33,11 @@
           </figcaption>
         </figure>
         {% endfor %}
+        {# If we leave pagination in for tags, the next and prev links will
+          link to tags and be rather confusing, so don't render in that situation #}
+        {% if not tag %}
+          {% include "partials/pagination.html" %}
+        {% endif %}
       </article>
     </div>
   </div>

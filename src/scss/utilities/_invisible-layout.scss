@@ -1,0 +1,4 @@
+/* hides visually AND removed from accessibility tree, but still takes up space in layout */
+.invisible-layout {
+    visibility: hidden;
+}

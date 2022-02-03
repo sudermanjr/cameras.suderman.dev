@@ -10,7 +10,9 @@ module.exports = {
   getLinkActiveState(itemUrl, pageUrl) {
     let response = '';
 
-    if (itemUrl === pageUrl) {
+    let itemUrlClean = itemUrl.replace('index.html', '')
+    let pageUrlClean = pageUrl.replace('index.html', '')
+    if (itemUrlClean === pageUrlClean) {
       response = ' aria-current="page"';
     }
 

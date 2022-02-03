@@ -17,7 +17,9 @@
   a {
     text-decoration: none;
     display: block;
+    min-inline-size: 3ch;
     position: relative;
+    text-align: center;
 
     // Adds the fake border to active state items
     &[data-state='active'],

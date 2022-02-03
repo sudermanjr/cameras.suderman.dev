@@ -2,17 +2,35 @@
 {% if pagination.href.next or pagination.href.previous %}
   <footer class="[ pagination ] [ dot-shadow panel ] [ font-sans weight-bold ]">
     <div class="wrapper">
-      <nav class="pagination__inner" aria-label="Pagination links">
-        {% if pagination.href.previous %}
-          <a href="{{ pagination.href.previous }}index.html" data-direction="backwards">
-            <span>{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
-          </a>
-        {% endif %}
-        {% if pagination.href.next %}
-          <a href="{{ pagination.href.next }}index.html" data-direction="forwards">
-            <span>{{ paginationNextText if paginationNextText else 'Next' }}</span>
-          </a>
-        {% endif %}
+      <nav class="[ pagination__inner ] [ nav ]" aria-labelledby="pagination-title">
+        <h2 class="visually-hidden" id="pagination-title">Pagination</h2>
+
+        <ul role="list">
+          {% if pagination.href.previous %}
+          <li data-direction="backwards">
+            <a href="{{ pagination.href.previous }}index.html">
+              <span>{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          <li>
+            Pages:
+            <ol role="list">
+              {%- for pageEntry in pagination.pages %}
+              <li><a {% if page.url !== pagination.hrefs[ loop.index0 ]%}href="{{ pagination.hrefs[ loop.index0 ] }}"{% endif %}{% if page.url == pagination.hrefs[ loop.index0 ]%} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+              {%- endfor %}
+            </ol>
+          </li>
+
+          {% if pagination.href.next %}
+          <li data-direction="forwards">
+            <a href="{{ pagination.href.next }}index.html">
+              <span>{{ paginationNextText if paginationNextText else 'Next' }}</span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
       </nav>
     </div>
   </footer>

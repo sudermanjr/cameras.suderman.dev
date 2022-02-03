@@ -16,7 +16,7 @@
             <span class="visually-hidden">Pages:</span>
             <ol class="pagination__pages" role="list">
               {%- for pageEntry in pagination.pages %}
-              <li><a {% if loop.index0 !== pagination.pageNumber %}href="{{ pagination.hrefs[ loop.index0 ] }}/index.html"{% endif %}{% if loop.index0 == pagination.pageNumber %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+              <li><a {% if loop.index0 !== pagination.pageNumber %}href="{{ pagination.hrefs[ loop.index0 ] }}index.html"{% endif %}{% if loop.index0 == pagination.pageNumber %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
               {%- endfor %}
             </ol>
           </li>

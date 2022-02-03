@@ -22,14 +22,14 @@
           <div class="[ gallery__media ] [ frame ]" data-frame="primary">
             {% image item.data.hero.image, item.data.hero.imageAlt, "radius" %}
           </div>
+
           <figcaption class="[ gallery__content ] [ flow ]">
             <h2 class="[ gallery__heading ] [ text-700 md:text-900 ]">
-              {{- item.data.title -}}
+              <a href="{{ item.url }}">{{- item.data.title -}}</a>
             </h2>
             <p class="[ gallery__summary ] [ measure-short flow-space-300 ]">
               {{ item.data.summary }}
             </p>
-            <a href="{{ item.url }}" class="button">See this camera</a>
           </figcaption>
         </figure>
         {% endfor %}

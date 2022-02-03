@@ -1,6 +1,6 @@
 {
-  "name": "Suderman Cameras",
-  "url": "https://cameras.suderman.dev",
+  "authorEmail": "andy@suderman.dev",
   "authorName": "Andy Suderman",
-  "authorEmail": "andy@suderman.dev"
+  "name": "Suderman Cameras",
+  "url": "https://cameras.suderman.dev"
 }

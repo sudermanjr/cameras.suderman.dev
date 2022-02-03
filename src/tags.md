@@ -8,4 +8,3 @@ pagination:
   filter: ['all', 'people', 'featuredcamera']
 permalink: '/tag/{{ tag | slug }}/'
 ---
-

@@ -5,7 +5,7 @@
       <nav class="[ pagination__inner ] [ nav ]" aria-labelledby="pagination-title">
         <h2 class="visually-hidden" id="pagination-title">Pagination</h2>
 
-        <ul role="list">
+        <ul class="pagination__list" role="list">
           {% if pagination.href.previous %}
           <li data-direction="backwards">
             <a href="{{ pagination.href.previous }}index.html">
@@ -14,9 +14,9 @@
           </li>
           {% endif %}
 
-          <li>
+          <li data-direction="center">
             Pages:
-            <ol role="list">
+            <ol class="pagination__pages" role="list">
               {%- for pageEntry in pagination.pages %}
               <li><a {% if page.url !== pagination.hrefs[ loop.index0 ]%}href="{{ pagination.hrefs[ loop.index0 ] }}"{% endif %}{% if page.url == pagination.hrefs[ loop.index0 ]%} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
               {%- endfor %}

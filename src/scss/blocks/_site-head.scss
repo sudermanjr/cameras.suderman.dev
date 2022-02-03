@@ -16,6 +16,7 @@
     transform: translateY(0.25rem);
 
     svg {
+      fill: get-color('dark-shade');
       width: 100px;
     }
   }

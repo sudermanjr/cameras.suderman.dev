@@ -2,6 +2,16 @@
   display: flex;
   flex-direction: column;
 
+  &__heading a::after {
+    content: "";
+    inset: 0;
+    position: absolute;
+  }
+
+  &__item {
+    position: relative;
+  }
+
   &__media {
     max-width: 40rem;
   }

@@ -1,12 +1,24 @@
 .pagination {
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
   }
 
-  // Pushes a sole "next" link out to the right
-  &__inner > [data-direction='forwards'] {
-    margin-inline-start: auto;
+  &__list {    
+    display: flex;
+    flex-wrap: wrap;
+    gap: #{get-size('500')};
+    justify-content: space-between;
+
+    [data-direction="center"] {
+      margin-inline: auto;
+    }
+  }
+
+  &__pages {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: #{get-size('300')};
   }
 }

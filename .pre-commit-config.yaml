@@ -24,3 +24,4 @@ repos:
       - id: git-check
 ci:
   autofix_prs: false
+  skip: [detect-aws-credentials]

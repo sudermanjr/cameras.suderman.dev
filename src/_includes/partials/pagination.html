@@ -15,7 +15,7 @@
           {% endif %}
 
           <li data-direction="center">
-            Pages:
+            <span class="visually-hidden">Pages:</span>
             <ol class="pagination__pages" role="list">
               {%- for pageEntry in pagination.pages %}
               <li><a {% if page.url !== pagination.hrefs[ loop.index0 ]%}href="{{ pagination.hrefs[ loop.index0 ] }}"{% endif %}{% if page.url == pagination.hrefs[ loop.index0 ]%} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
